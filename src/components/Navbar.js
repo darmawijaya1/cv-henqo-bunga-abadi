@@ -7,7 +7,7 @@ const navLinks = [
   { href: '/tentang', label: 'Tentang' },
   { href: '/portofolio', label: 'Portofolio' },
   { href: '/layanan', label: 'Layanan' },
-  { href: '/Produk', label: 'Produk' },
+  { href: '/produk', label: 'Produk' },
   { href: '/legalitas', label: 'Legalitas' },
   { href: '/dokumentasi', label: 'Dokumentasi' },
   { href: '/kontak', label: 'Kontak' },
@@ -24,14 +24,18 @@ export default function Navbar() {
           <img src="/images/logo.png" alt="Logo" className="w-11 h-11 rounded-2xl shadow-elegant border border-orange-100" />
           <span className="hidden sm:block drop-shadow">CV. Henqo Bunga Abadi</span>
         </Link>
+        {/* Hamburger menu */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex items-center justify-center p-2 rounded-lg transition hover:bg-orange-50 focus:outline-none"
           aria-label="Toggle menu"
         >
           <div className="relative w-7 h-7 flex flex-col justify-center items-center">
+            {/* Bar 1 */}
             <span className={`block absolute h-0.5 w-6 bg-orange-600 transform transition duration-300 ease-in-out ${open ? "rotate-45 top-3.5" : "top-2"}`}></span>
+            {/* Bar 2 */}
             <span className={`block absolute h-0.5 w-6 bg-orange-600 transition-all duration-300 ease-in-out ${open ? "opacity-0" : "top-3.5"}`}></span>
+            {/* Bar 3 */}
             <span className={`block absolute h-0.5 w-6 bg-orange-600 transform transition duration-300 ease-in-out ${open ? "-rotate-45 top-3.5" : "top-5"}`}></span>
           </div>
         </button>

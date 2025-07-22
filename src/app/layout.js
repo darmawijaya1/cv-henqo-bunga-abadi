@@ -5,6 +5,10 @@ import Footer from '../components/Footer'
 export const metadata = {
   title: "CV. Henqo Bunga Abadi",
   description: "Company profile resmi CV. Henqo Bunga Abadi - Konsultan Teknik, General Contractor, Industri Pupuk & Perdagangan",
+  icons: {
+    icon: "/images/logo.png",      // favicon (harus di /public/images/logo.png)
+    shortcut: "/images/logo.png",  // untuk iOS/pinned tab
+  }
 }
 
 export default function RootLayout({ children }) {
