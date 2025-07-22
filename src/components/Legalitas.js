@@ -9,7 +9,7 @@ const LEGALITAS = [
   {
     title: "NPWP",
     img: "/images/legalitas/npwp.png",
-    pdf: "/pdf/legalitas/npwp.pdf"
+    pdf: "/pdf/legalitas/npwpcv.pdf"
   },
   {
     title: "Akta Pendirian CV",
