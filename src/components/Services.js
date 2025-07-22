@@ -38,28 +38,18 @@ export default function Services() {
         {SERVICES.map((srv) => (
           <div
             key={srv.title}
-            className="
-              group bg-white rounded-2xl shadow-elegant p-8 transition
-              hover:shadow-2xl hover:-translate-y-2 duration-300 relative overflow-hidden
-              flex flex-col items-center text-center min-h-[280px]
-              animate-fadein
-            "
+            className="group bg-white rounded-2xl shadow-elegant p-8 transition hover:shadow-2xl hover:-translate-y-2 duration-300 relative overflow-hidden flex flex-col items-center text-center min-h-[280px] animate-fadein"
           >
             <div className="flex items-center justify-center mb-2">{srv.icon}</div>
             <h3 className="text-xl font-bold text-orange-700 mb-2">{srv.title}</h3>
             <p className="text-gray-700 mb-3">{srv.desc}</p>
-            <div className="
-              opacity-0 group-hover:opacity-100 transition
-              absolute inset-0 flex flex-col justify-end items-center bg-orange-50 bg-opacity-90 px-6 pb-6
-              pointer-events-none
-            ">
+            <div className="opacity-0 group-hover:opacity-100 transition absolute inset-0 flex flex-col justify-end items-center bg-orange-50 bg-opacity-90 px-6 pb-6 pointer-events-none">
               <span className="text-orange-700 font-semibold text-sm">Edukasi:</span>
               <p className="text-xs text-gray-800 mt-1">{srv.edukasi}</p>
             </div>
           </div>
         ))}
       </div>
-      {/* Tambah animasi fadein pakai Tailwind */}
       <style jsx global>{`
         @keyframes fadein {
           from { opacity: 0; transform: translateY(40px);}
