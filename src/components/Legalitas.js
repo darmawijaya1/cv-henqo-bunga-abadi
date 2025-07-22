@@ -2,7 +2,6 @@
 import { useState } from "react"
 import dynamic from "next/dynamic"
 
-// Dynamic import agar hanya dijalankan di browser
 const PDFViewer = dynamic(() => import("./PDFViewer"), { ssr: false })
 
 const LEGALITAS = [
@@ -61,13 +60,19 @@ export default function Legalitas() {
           <div
             className="
               bg-white rounded-2xl shadow-2xl
-              w-[95vw] max-w-3xl
-              h-[90vh] max-h-[640px]
-              p-2 sm:p-4
-              relative
-              flex flex-col
+              w-full h-full
+              max-w-full max-h-full
+              sm:w-[95vw] sm:h-[90vh] sm:max-w-3xl sm:max-h-[90vh]
+              p-1 sm:p-4
+              relative flex flex-col
             "
             onClick={e => e.stopPropagation()}
+            style={{
+              width: '100vw',
+              height: '100vh',
+              maxWidth: '100vw',
+              maxHeight: '100vh'
+            }}
           >
             <button
               className="absolute top-2 right-2 text-orange-600 hover:text-orange-900 text-2xl font-bold z-10"
