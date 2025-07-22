@@ -35,15 +35,15 @@ export default function Services() {
         Layanan Kami
       </h2>
       <div className="grid gap-8 sm:grid-cols-2">
-        {SERVICES.map((srv, idx) => (
+        {SERVICES.map((srv) => (
           <div
             key={srv.title}
             className="
               group bg-white rounded-2xl shadow-elegant p-8 transition
               hover:shadow-2xl hover:-translate-y-2 duration-300 relative overflow-hidden
               flex flex-col items-center text-center min-h-[280px]
+              animate-fadein
             "
-            style={{ animation: `fadein 0.8s cubic-bezier(.4,2,.6,1) ${0.15 * idx}s both` }}
           >
             <div className="flex items-center justify-center mb-2">{srv.icon}</div>
             <h3 className="text-xl font-bold text-orange-700 mb-2">{srv.title}</h3>
@@ -59,10 +59,14 @@ export default function Services() {
           </div>
         ))}
       </div>
-      <style jsx>{`
+      {/* Tambah animasi fadein pakai Tailwind */}
+      <style jsx global>{`
         @keyframes fadein {
           from { opacity: 0; transform: translateY(40px);}
           to { opacity: 1; transform: none;}
+        }
+        .animate-fadein {
+          animation: fadein 0.8s cubic-bezier(.4,2,.6,1) both;
         }
       `}</style>
     </section>
