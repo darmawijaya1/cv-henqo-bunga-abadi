@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-black-600 text-white text-center py-5 mt-10 rounded-t-2xl shadow-elegant">
+    <footer className="bg-grey-600 text-black text-center py-5 mt-10 rounded-t-2xl shadow-elegant">
       <div>
         <p className="font-bold text-lg">CV. Henqo Bunga Abadi</p>
         <p>Jl. Raden Fattah No.21, Tanjung Karang Pusat, Bandar Lampung</p>
