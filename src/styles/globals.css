@@ -1,0 +1,74 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --orange: #FF7A00; /* Orange branding utama */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button, .btn {
+  background: var(--orange);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: #DB6300;
+}
+
+input, textarea, select {
+  background: #fff;
+  color: #171717;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px 0 rgba(255,122,0,0.08);
+}
+
+/* Responsive tweak */
+@media (max-width: 640px) {
+  h1, .text-3xl { font-size: 2rem; }
+  h2, .text-2xl { font-size: 1.5rem; }
+}
