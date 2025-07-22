@@ -1,8 +1,9 @@
 'use client'
 import { useState } from "react"
-import { Document, Page, pdfjs } from "react-pdf"
+import dynamic from "next/dynamic"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+// Dynamic import agar hanya dijalankan di browser, BUKAN saat build SSR
+const PDFViewer = dynamic(() => import("./PDFViewer"), { ssr: false })
 
 const LEGALITAS = [
   {
@@ -25,21 +26,14 @@ const LEGALITAS = [
 export default function Legalitas() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedPDF, setSelectedPDF] = useState(null)
-  const [numPages, setNumPages] = useState(null)
-  const [pageNumber, setPageNumber] = useState(1)
 
   function openModal(pdf) {
     setSelectedPDF(pdf)
     setModalOpen(true)
-    setPageNumber(1)
   }
   function closeModal() {
     setModalOpen(false)
     setSelectedPDF(null)
-  }
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages)
   }
 
   return (
@@ -66,28 +60,8 @@ export default function Legalitas() {
               className="absolute top-2 right-2 text-orange-600 hover:text-orange-900 text-xl"
               onClick={closeModal}
             >&times;</button>
-            <Document
-              file={selectedPDF}
-              onLoadSuccess={onDocumentLoadSuccess}
-              loading={<div className="text-center py-8">Loading PDF...</div>}
-            >
-              <Page pageNumber={pageNumber} width={500}/>
-            </Document>
-            <div className="flex justify-between items-center mt-4">
-              <button
-                onClick={() => setPageNumber(prev => Math.max(prev - 1, 1))}
-                disabled={pageNumber <= 1}
-                className="px-4 py-1 rounded bg-orange-100 text-orange-700 font-semibold hover:bg-orange-200 disabled:opacity-50"
-              >Prev</button>
-              <span className="text-sm font-medium">
-                Halaman {pageNumber} dari {numPages}
-              </span>
-              <button
-                onClick={() => setPageNumber(prev => Math.min(prev + 1, numPages))}
-                disabled={pageNumber >= numPages}
-                className="px-4 py-1 rounded bg-orange-100 text-orange-700 font-semibold hover:bg-orange-200 disabled:opacity-50"
-              >Next</button>
-            </div>
+            {/* PDFViewer hanya dirender di browser! */}
+            <PDFViewer file={selectedPDF} />
           </div>
         </div>
       )}
