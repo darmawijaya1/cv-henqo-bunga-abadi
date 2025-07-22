@@ -8,17 +8,17 @@ const PDFViewer = dynamic(() => import("./PDFViewer"), { ssr: false })
 const LEGALITAS = [
   {
     title: "NPWP",
-    img: "/images/legalitas/npwp.jpg",
+    img: "/images/legalitas/npwp.png",
     pdf: "/pdf/legalitas/npwp.pdf"
   },
   {
     title: "Akta Pendirian CV",
-    img: "/images/legalitas/akta.jpg",
+    img: "/images/legalitas/akta.png",
     pdf: "/pdf/legalitas/akta.pdf"
   },
   {
     title: "SK MENKUMHAM",
-    img: "/images/legalitas/sk-menkumham.jpg",
+    img: "/images/legalitas/sk-menkumham.png",
     pdf: "/pdf/legalitas/sk-menkumham.pdf"
   }
 ]
