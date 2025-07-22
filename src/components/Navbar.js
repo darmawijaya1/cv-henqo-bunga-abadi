@@ -5,7 +5,9 @@ import { useState } from 'react'
 
 const navLinks = [
   { href: '/tentang', label: 'Tentang' },
+  { href: '/portofolio', label: 'Portofolio' },
   { href: '/layanan', label: 'Layanan' },
+  { href: '/Produk', label: 'Produk' },
   { href: '/legalitas', label: 'Legalitas' },
   { href: '/dokumentasi', label: 'Dokumentasi' },
   { href: '/kontak', label: 'Kontak' },
