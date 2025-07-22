@@ -1,0 +1,45 @@
+cv-henqo-bunga-abadi/
+├── public/
+│   └── images/
+│       ├── logo.png
+│       ├── dokumentasi/
+│       │   ├── foto1.jpg
+│       │   └── ...
+│       └── legalitas/
+│           ├── npwp.jpg
+│           ├── akta.jpg
+│           ├── sk-menkumham.jpg
+│           └── ...
+├── src/
+│   ├── app/
+│   │   ├── layout.js         # Untuk layout global
+│   │   ├── page.js           # Landing page ("/")
+│   │   ├── tentang/
+│   │   │   └── page.js
+│   │   ├── layanan/
+│   │   │   └── page.js
+│   │   ├── legalitas/
+│   │   │   └── page.js
+│   │   ├── dokumentasi/
+│   │   │   └── page.js
+│   │   └── kontak/
+│   │       └── page.js
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── Hero.js
+│   │   ├── Services.js
+│   │   ├── About.js
+│   │   ├── ContactForm.js
+│   │   ├── Legalitas.js
+│   │   └── Dokumentasi.js
+│   └── styles/
+│       ├── globals.css
+│       └── theme.css
+├── .env.local
+├── next.config.js
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── README.md
+└── .gitignore
