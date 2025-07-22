@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --orange: #FF7A00;
+  --orange: #FF7A00; /* Orange branding utama */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,9 +24,16 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
-/* Tambahan style button/input dll (lihat jawaban sebelumnya) */
-a { color: var(--orange); }
-.btn {
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button, .btn {
   background: var(--orange);
   color: #fff;
   font-weight: 600;
@@ -36,17 +43,32 @@ a { color: var(--orange); }
   cursor: pointer;
   transition: background 0.2s;
 }
-.btn:hover { background: #DB6300; }
-input, textarea {
+button:hover, .btn:hover {
+  background: #DB6300;
+}
+
+input, textarea, select {
   background: #fff;
   color: #171717;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  margin-top: 2px;
-  width: 100%;
   outline: none;
   transition: border 0.2s;
 }
-input:focus, textarea:focus { border-color: var(--orange); }
-img { max-width: 100%; display: block; border-radius: 0.75rem; }
+input:focus, textarea:focus, select:focus {
+  border-color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px 0 rgba(255,122,0,0.08);
+}
+
+/* Responsive tweak */
+@media (max-width: 640px) {
+  h1, .text-3xl { font-size: 2rem; }
+  h2, .text-2xl { font-size: 1.5rem; }
+}
