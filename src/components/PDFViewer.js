@@ -1,4 +1,8 @@
+'use client'
+
 export default function PDFViewer({ file }) {
+  if (!file) return null
+
   return (
     <div className="w-full flex justify-center">
       <iframe
@@ -7,7 +11,8 @@ export default function PDFViewer({ file }) {
         height="600px"
         className="rounded-xl border shadow"
         title="PDF File"
-        style={{ minHeight: 400 }}
+        style={{ minHeight: 400, maxWidth: 700 }}
+        allowFullScreen
       />
     </div>
   )
