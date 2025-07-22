@@ -4,7 +4,7 @@ export default function Footer() {
       <div>
         <p className="font-bold text-lg">CV. Henqo Bunga Abadi</p>
         <p>Jl. Raden Fattah No.21, Tanjung Karang Pusat, Bandar Lampung</p>
-        <p>Email: <a href="mailto:henqobungaabadi@gmail.com" className="underline">henqobungaabadi@gmail.com</a> | Telp: 082175111972</p>
+        <p>Email: <a href="mailto:henqobungaabadi@gmail.com">henqobungaabadi@gmail.com</a> | Telp: 082175111972</p>
         <p className="text-xs mt-2">&copy; {new Date().getFullYear()} CV. Henqo Bunga Abadi. All Rights Reserved.</p>
       </div>
     </footer>
