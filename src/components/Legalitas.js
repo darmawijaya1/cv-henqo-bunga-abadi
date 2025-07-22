@@ -2,7 +2,7 @@
 import { useState } from "react"
 import dynamic from "next/dynamic"
 
-// Dynamic import agar hanya dijalankan di browser, BUKAN saat build SSR
+// Dynamic import agar hanya dijalankan di browser
 const PDFViewer = dynamic(() => import("./PDFViewer"), { ssr: false })
 
 const LEGALITAS = [
@@ -54,14 +54,29 @@ export default function Legalitas() {
       </div>
 
       {modalOpen && (
-        <div className="fixed z-50 inset-0 bg-black/60 flex items-center justify-center" onClick={closeModal}>
-          <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-4 relative" onClick={e => e.stopPropagation()}>
+        <div
+          className="fixed z-50 inset-0 bg-black/60 flex items-center justify-center"
+          onClick={closeModal}
+        >
+          <div
+            className="
+              bg-white rounded-2xl shadow-2xl
+              w-[95vw] max-w-3xl
+              h-[90vh] max-h-[640px]
+              p-2 sm:p-4
+              relative
+              flex flex-col
+            "
+            onClick={e => e.stopPropagation()}
+          >
             <button
-              className="absolute top-2 right-2 text-orange-600 hover:text-orange-900 text-xl"
+              className="absolute top-2 right-2 text-orange-600 hover:text-orange-900 text-2xl font-bold z-10"
               onClick={closeModal}
+              aria-label="Close PDF"
             >&times;</button>
-            {/* PDFViewer hanya dirender di browser! */}
-            <PDFViewer file={selectedPDF} />
+            <div className="flex-1 flex flex-col min-h-0">
+              <PDFViewer file={selectedPDF} />
+            </div>
           </div>
         </div>
       )}
