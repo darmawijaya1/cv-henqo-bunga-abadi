@@ -13,12 +13,12 @@ const LEGALITAS = [
   {
     title: "Akta Pendirian CV",
     img: "/images/legalitas/akta.png",
-    pdf: "/pdf/legalitas/akta.pdf"
+    pdf: "/pdf/legalitas/aktacv.pdf"
   },
   {
     title: "SK MENKUMHAM",
     img: "/images/legalitas/sk-menkumham.png",
-    pdf: "/pdf/legalitas/sk-menkumham.pdf"
+    pdf: "/pdf/legalitas/skcv.pdf"
   }
 ]
 
