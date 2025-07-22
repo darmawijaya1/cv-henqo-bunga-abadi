@@ -2,7 +2,10 @@
 import { useState } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+// Ini bagian PENTING, WAJIB
+if (typeof window !== "undefined" && pdfjs.GlobalWorkerOptions) {
+  pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.mjs" // atau .js, sesuai file yang kamu copy
+}
 
 export default function PDFViewer({ file }) {
   const [numPages, setNumPages] = useState(null)
