@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://cv-henqo-bunga-abadi.vercel.app/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/tentang</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/layanan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/portofolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/legalitas</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/dokumentasi</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cv-henqo-bunga-abadi.vercel.app/kontak</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Tambahkan URL lain jika ada -->
+</urlset>
