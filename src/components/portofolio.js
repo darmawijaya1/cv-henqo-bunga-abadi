@@ -78,7 +78,7 @@ const portoRawData = [
   "Pembuatan Depot Air Isi Ulang, Gedong Haji Lama-Lampung Utara, 2012",
   "IPAL RS Mardi Waluyo Metro, 2022",
   "IPAL PT Keong Nusantara Abadi (Wongcoco Group), 2022",
-  "IPLT Dinas Kebersihan Kota Bandar Lampung, 2023"
+  "IPLT Dinas Kebersihan Kota Bandar Lampung, 2023"
 ];
 
 function parsePortoRow(str) {
