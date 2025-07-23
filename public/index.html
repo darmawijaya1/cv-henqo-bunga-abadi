@@ -9,37 +9,101 @@
   <style>
     body {
       font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-      margin: 0; background: #fff7ec; color: #262626;
+      margin: 0;
+      background: #fff7ec;
+      color: #262626;
     }
     .hero {
       background: linear-gradient(100deg,#ffedd5 70%, #fdba74 100%);
-      padding: 48px 0 32px 0; text-align: center;
+      padding: 48px 0 32px 0;
+      text-align: center;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+      box-shadow: 0 2px 32px #ffedd533;
     }
     .hero img {
-      width: 76px; height: 76px; border-radius: 20px; margin-bottom: 16px;
+      width: 84px;
+      height: 84px;
+      border-radius: 24px;
+      margin-bottom: 18px;
       box-shadow: 0 2px 20px #fdba74bb;
+      background: #fff;
     }
     .hero h1 {
-      font-size: 2.5rem; color: #ea580c; font-weight: 800; margin-bottom: 10px; letter-spacing: 2px;
+      font-size: 2.7rem;
+      color: #ea580c;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-shadow: 0 1px 10px #fff3ed99;
     }
     .hero p {
-      font-size: 1.18rem; color: #854d0e; margin-bottom: 12px; font-weight: 400;
+      font-size: 1.14rem;
+      color: #854d0e;
+      margin-bottom: 10px;
+      font-weight: 400;
     }
-    section { max-width: 900px; margin: 36px auto 0 auto; background: #fff; border-radius: 22px; box-shadow: 0 6px 32px #ffedd533; padding: 32px 18px 28px 18px; }
-    h2 { color: #ea580c; font-size: 2rem; margin-bottom: 12px; font-weight: 700; letter-spacing: 1px;}
+    section {
+      max-width: 940px;
+      margin: 40px auto 0 auto;
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 6px 32px #ffedd533;
+      padding: 34px 22px 28px 22px;
+    }
+    h2 {
+      color: #ea580c;
+      font-size: 2rem;
+      margin-bottom: 14px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
     ul, ol { padding-left: 18px; }
-    .layanan { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 16px;}
-    .layanan .item {
-      flex: 1 1 190px; background: #fff7ed; border-radius: 15px; padding: 18px; box-shadow: 0 2px 14px #fdba7422;
-      min-width: 230px; max-width: 320px;
+    .layanan {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin-top: 18px;
     }
-    .layanan h3 { color: #ea580c; font-size: 1.16rem; font-weight: 700; margin: 0 0 6px 0; }
-    .layanan p { color: #6b4204; font-size: 1rem; }
-    .footer { text-align: center; padding: 18px 0 20px 0; color: #a06c37; font-size: 0.97rem; margin-top: 40px; }
+    .layanan .item {
+      flex: 1 1 190px;
+      background: #fff7ed;
+      border-radius: 17px;
+      padding: 18px;
+      box-shadow: 0 2px 16px #fdba7422;
+      min-width: 230px;
+      max-width: 320px;
+      border-left: 5px solid #fb923c;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .layanan .item:hover {
+      box-shadow: 0 4px 32px #fb923c33;
+      transform: translateY(-7px) scale(1.03);
+    }
+    .layanan h3 {
+      color: #ea580c;
+      font-size: 1.16rem;
+      font-weight: 700;
+      margin: 0 0 6px 0;
+    }
+    .layanan p {
+      color: #6b4204;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .footer {
+      text-align: center;
+      padding: 18px 0 20px 0;
+      color: #a06c37;
+      font-size: 1rem;
+      margin-top: 45px;
+      letter-spacing: 0.5px;
+    }
     @media (max-width: 700px) {
       .hero h1 { font-size: 2rem; }
       section { padding: 18px 5vw 16px 5vw; }
       .layanan { flex-direction: column; }
+      .layanan .item { max-width: 100%; min-width: 0; }
     }
   </style>
 </head>
