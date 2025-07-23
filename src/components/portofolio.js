@@ -107,7 +107,6 @@ const portoRawData = [
 
 function parsePortoRow(str) {
   if (!str) return null;
-  // Hilangkan angka urut jika ada
   let s = str.replace(/^\d+\s*,\s*/, '');
   const [title, lokasi, tahun] = s.split(',');
   return {
@@ -122,23 +121,33 @@ export default function Portofolio() {
 
   return (
     <section className="max-w-5xl mx-auto py-12 px-4">
-      <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center">Portofolio Proyek</h2>
-      <div className="flex flex-col gap-3">
-        {projects.map((proj, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row md:items-center gap-2 border-l-4 border-orange-400"
-          >
-            <div className="flex-1">
-              <div className="font-semibold text-base text-orange-700">{proj.title}</div>
-              <div className="text-sm text-gray-500">{proj.client}</div>
-            </div>
-            <div className="font-bold text-orange-600 md:w-20 text-right">{proj.year}</div>
-          </div>
-        ))}
+      <h2 className="text-3xl font-extrabold mb-10 text-orange-600 text-center tracking-wide">Portofolio Proyek</h2>
+      <div className="overflow-x-auto">
+        <table className="min-w-full border rounded-xl shadow bg-white">
+          <thead>
+            <tr className="bg-orange-50 text-orange-700 text-left">
+              <th className="py-3 px-4 text-center w-12">No</th>
+              <th className="py-3 px-4">Nama Proyek</th>
+              <th className="py-3 px-4">Lokasi / Klien</th>
+              <th className="py-3 px-4 text-center w-20">Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            {projects.map((proj, i) => (
+              <tr key={i} className="hover:bg-orange-50 transition">
+                <td className="py-2 px-4 text-center text-gray-700">{i + 1}</td>
+                <td className="py-2 px-4 font-medium text-orange-900">{proj.title}</td>
+                <td className="py-2 px-4 text-gray-700">{proj.client}</td>
+                <td className="py-2 px-4 text-center font-bold text-orange-600">{proj.year}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <div className="mt-8 text-xs text-gray-400 text-center">
-        Total Proyek: {projects.length}
+      <div className="mt-7 flex justify-center">
+        <div className="bg-orange-600 text-white px-5 py-2 rounded-full text-lg font-bold shadow-lg border-2 border-orange-300">
+          Total Portofolio: {projects.length} Proyek
+        </div>
       </div>
     </section>
   );
