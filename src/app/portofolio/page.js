@@ -1,5 +1,5 @@
-import portofolio from '../../components/portofolio'
+import Portofolio from '../../components/portofolio'
 
-export default function portofolioPage() {
-  return <portopolio />
+export default function PortofolioPage() {
+  return <Portofolio />
 }
