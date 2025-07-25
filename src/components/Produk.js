@@ -16,6 +16,7 @@ const products = [
     name: "MicroBio Bacteri Super Azolla",
     images: [
       "/images/produk/MicroBio Bacteri Super Azolla.jpg",
+      "/images/produk/Produk.jpg",
     ],
     pdf: "/pdf/produk/MicroBio Bacteri Super Azolla.pdf"
   },
