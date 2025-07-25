@@ -10,16 +10,10 @@ const products = [
     pdf: "/pdf/produk/Probiotik Super Azolla.pdf"
   },
   {
-    name: "Pupuk Kompos Padat",
-    image: "/images/produk/pupuk-kompos.jpg",
-    pdf: "/pdf/produk/pupuk-kompos.pdf"
+    name: "MicroBio Bacteri Super Azolla",
+    image: "/images/produk/MicroBio Bacteri Super Azolla.jpg",
+    pdf: "/pdf/produk/MicroBio Bacteri Super Azolla.pdf"
   },
-  {
-    name: "Bio Aktivator",
-    image: "/images/produk/bio-aktivator.jpg",
-    pdf: "/pdf/produk/bio-aktivator.pdf"
-  },
-  // Tambahkan produk lainnya sesuai kebutuhan...
 ]
 
 export default function Produk() {
