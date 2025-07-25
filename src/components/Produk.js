@@ -6,14 +6,20 @@ import Slider from 'react-slick'
 const products = [
   {
     name: "Probiotik Super Azolla",
-    image: "/images/produk/Probiotik Super Azolla.jpg",
+    images: [
+      "/images/produk/Probiotik Super Azolla.jpg",
+      "/images/produk/Produk.jpg",
+    ],
     pdf: "/pdf/produk/Probiotik Super Azolla.pdf"
   },
   {
     name: "MicroBio Bacteri Super Azolla",
-    image: "/images/produk/MicroBio Bacteri Super Azolla.jpg",
+    images: [
+      "/images/produk/MicroBio Bacteri Super Azolla.jpg",
+    ],
     pdf: "/pdf/produk/MicroBio Bacteri Super Azolla.pdf"
   },
+  // Tambahkan produk lain sesuai kebutuhan...
 ]
 
 export default function Produk() {
@@ -21,16 +27,15 @@ export default function Produk() {
   const [selectedPdf, setSelectedPdf] = useState(null)
   const [selectedTitle, setSelectedTitle] = useState('')
 
-  const settings = {
+  // Slider untuk gambar produk (dalam 1 produk)
+  const imageSliderSettings = {
     dots: true,
     infinite: true,
-    speed: 700,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 }},
-      { breakpoint: 600, settings: { slidesToShow: 1 }},
-    ]
+    arrows: true,
+    className: 'product-image-slider',
   }
 
   function handleOpen(pdf, name) {
@@ -47,28 +52,35 @@ export default function Produk() {
   return (
     <section className="max-w-5xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center">Produk Kami</h2>
-      <Slider {...settings}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {products.map((prod, idx) => (
-          <div key={idx} className="px-3">
-            <div className="bg-white rounded-2xl shadow-elegant hover:shadow-2xl transition p-5 flex flex-col items-center">
-              <img
-                src={prod.image}
-                alt={prod.name}
-                className="h-48 w-auto object-contain mb-3 rounded-lg shadow cursor-pointer border-2 border-orange-200"
-                onClick={() => handleOpen(prod.pdf, prod.name)}
-                loading="lazy"
-              />
-              <div className="font-semibold text-orange-700 mb-1 text-center">{prod.name}</div>
-              <button
-                className="mt-2 px-4 py-1 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition"
-                onClick={() => handleOpen(prod.pdf, prod.name)}
-              >
-                Lihat Detail Produk
-              </button>
+          <div key={idx} className="bg-white rounded-2xl shadow-elegant hover:shadow-2xl transition p-5 flex flex-col items-center">
+            <div className="w-full mb-3">
+              <Slider {...imageSliderSettings}>
+                {prod.images.map((img, i) => (
+                  <div key={i}>
+                    <img
+                      src={img}
+                      alt={prod.name + ` foto ${i+1}`}
+                      className="h-56 w-auto mx-auto object-contain rounded-lg shadow cursor-pointer border-2 border-orange-200"
+                      onClick={() => handleOpen(prod.pdf, prod.name)}
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </Slider>
             </div>
+            <div className="font-semibold text-orange-700 mb-1 text-center">{prod.name}</div>
+            <button
+              className="mt-2 px-4 py-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition font-bold"
+              onClick={() => handleOpen(prod.pdf, prod.name)}
+            >
+              Lihat Detail Produk
+            </button>
           </div>
         ))}
-      </Slider>
+      </div>
+
       {/* MODAL PDF */}
       {openModal && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center" onClick={handleClose}>
@@ -86,11 +98,6 @@ export default function Produk() {
           </div>
         </div>
       )}
-      {/* SLICK CSS */}
-      <style global jsx>{`
-        @import "~slick-carousel/slick/slick.css";
-        @import "~slick-carousel/slick/slick-theme.css";
-      `}</style>
     </section>
   )
 }
