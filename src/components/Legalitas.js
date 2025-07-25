@@ -24,6 +24,11 @@ const LEGALITAS = [
     title: "SK MENKUMHAM",
     img: "/images/legalitas/sk-menkumham.png",
     pdf: "/pdf/legalitas/skcv.pdf"
+  },
+  {
+    title: "UJI LAB",
+    img: "/images/legalitas/lab.png",
+    pdf: "/pdf/legalitas/labcv.pdf"
   }
 ]
 
