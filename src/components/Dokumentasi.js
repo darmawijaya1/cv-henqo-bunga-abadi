@@ -17,6 +17,13 @@ const activities = [
       "/images/dokumentasi/kg2.2.png"
     ]
   },
+  {
+    title: "Pengarahan Teknis IPAL PT Keong Nusantara Abadi NatarPelatihan “ BUDIDAYA BAKTERI PROBIOTIK “ Pada Team IPAL PT.KEONG NUSANTARA ABADI",
+    images: [
+      "/images/dokumentasi/kg3.1.png",
+      "/images/dokumentasi/kg3.2.png"
+    ]
+  },
   // Tambahkan kegiatan lain di sini
 ]
 
