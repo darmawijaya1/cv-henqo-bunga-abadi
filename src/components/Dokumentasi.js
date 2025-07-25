@@ -7,16 +7,14 @@ const activities = [
     title: "Bersama Direktur PT Keong Nusantara Abadi ( Wongcoco Group)",
     images: [
       "/images/dokumentasi/kg1.1.png",
-      "/images/dokumentasi/kg1.2.png",
-      "/images/dokumentasi/foto3.jpg"
+      "/images/dokumentasi/kg1.2.png"
     ]
   },
   {
-    title: "Kegiatan Edukasi Pupuk Organik",
+    title: "Pengarahan Teknis IPAL PT Keong Nusantara Abadi Natar",
     images: [
-      "/images/dokumentasi/foto4.jpg",
-      "/images/dokumentasi/foto5.jpg",
-      "/images/dokumentasi/foto6.jpg"
+      "/images/dokumentasi/kg2.1.png",
+      "/images/dokumentasi/kg2.2.png"
     ]
   },
   // Tambahkan kegiatan lain di sini
