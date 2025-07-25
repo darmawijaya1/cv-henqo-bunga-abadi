@@ -25,7 +25,7 @@ const portoRawData = [
   "IPAL PT. MUTU GADING TEKSTIL (Tekstil), Surakarta, 1998",
   "IPAL PT. DJARUM (Rokok), Kudus, 1992",
   "IPAL PT. INDONESIA STEEL TUBE WORK Ltd. (Pipa Galvania), Semarang, 1992",
-  "IPAL PT. SUKOHARJO MAKMUR ABADI  (Tapioka), Sukoharjo, 1993",
+  "IPAL PT. SUKOHARJO MAKMUR ABADI (Tapioka), Sukoharjo, 1993",
   "IPAL PTP. XIV (PERSERO), Cirebon, 1994",
   "IPAL PG. GEMPOL (Gula)",
   "IPAL PG. TERSANA BARU (Gula)",
@@ -41,13 +41,13 @@ const portoRawData = [
   "IPAL RS. GRAHA MEDIKA (Rumah Sakit), Jakarta, 1994",
   "IPAL RS. HARUM (Rumah Sakit), Jakarta, 1994",
   "IPAL RS. MEDIKA GRIYA (Rumah Sakit), Jakarta, 1994",
-  "IPAL PT. BINAJAYA RODA-KARYA (Barito Group), (Kayu Lapis), Banjarmasin, 1995",
+  "IPAL PT. BINAJAYA RODA-KARYA (Barito Group) (Kayu Lapis), Banjarmasin, 1995",
   "IPAL PT. BINTANG BUANA SAKTI (Kulit), Semarang, 1996",
   "IPAL PT. PUSPITA ABADI (Kulit), Semarang, 1996",
   "IPAL PT. PUSKUD MINA BARUNA (Ikan Beku), Semarang, 1996",
   "IPAL CV. SUMBER BARU (Kertas), Semarang, 1996",
   "IPAL PT. CONDRO PURNOMO CIPTO (Kulit), Semarang, 1996",
-  "IPAL 5 (LIMA) INDUSTRI TAPIOKA DI PURBALINGGA  (Tepung Aci), Purbalingga, 1998",
+  "IPAL 5 (LIMA) INDUSTRI TAPIOKA DI PURBALINGGA (Tepung Aci), Purbalingga, 1998",
   "IPAL PT. SUMALINDO LESTARI JAYA (Kayu Lapis), Samarinda, 1999",
   "IPAL PT. MDF (Kayu Lapis), Samarinda, 1999",
   "IPAL PT. NOJORONO (Rokok), Kudus, 2000",
@@ -76,9 +76,11 @@ const portoRawData = [
   "Pembuatan Depot Air Isi Ulang, Kemiling-Bandar Lampung, 2012",
   "Pembuatan Depot Air Isi Ulang, Unit 6-Tulang Bawang, 2012",
   "Pembuatan Depot Air Isi Ulang, Gedong Haji Lama-Lampung Utara, 2012",
-  "IPAL RS Mardi Waluyo Metro, 2022",
+  "IPAL MC'D Kota Bandar Lampung, Bandar Lampung, 2018",
+  "IPAL MC'D Kota Palembang, Palembang, 2018",
+  "IPAL RS Mardi Waluyo Metro, Metro, 2022",
   "IPAL PT Keong Nusantara Abadi (Wongcoco Group), 2022",
-  "IPLT Dinas Kebersihan Kota Bandar Lampung, 2023"
+  "IPLT Dinas Kebersihan Kota Bandar Lampung, Bandar Lampung, 2023"
 ];
 
 function parsePortoRow(str) {
@@ -98,7 +100,7 @@ export default function Portofolio() {
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center tracking-wide">
-        Portofolio Proyek
+        Pengalaman Kerja
       </h2>
       <div className="flex flex-col gap-3">
         {projects.map((proj, i) => (
