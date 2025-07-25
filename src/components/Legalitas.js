@@ -11,6 +11,11 @@ const LEGALITAS = [
     pdf: "/pdf/legalitas/npwpcv.pdf"
   },
   {
+    title: "NIB",
+    img: "/images/legalitas/nib.png",
+    pdf: "/pdf/legalitas/nibcv.pdf"
+  },
+  {
     title: "Akta Pendirian CV",
     img: "/images/legalitas/akta.png",
     pdf: "/pdf/legalitas/aktacv.pdf"
