@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import Slider from 'react-slick'
 
-// Data produk
 const products = [
   {
     name: "Probiotik Super Azolla",
@@ -28,7 +27,7 @@ export default function Produk() {
   const [selectedPdf, setSelectedPdf] = useState(null)
   const [selectedTitle, setSelectedTitle] = useState('')
 
-  // Slider untuk gambar produk (dalam 1 produk)
+  // Setting slider untuk gambar di tiap produk (bukan slide produk)
   const imageSliderSettings = {
     dots: true,
     infinite: true,
@@ -36,7 +35,7 @@ export default function Produk() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    className: 'product-image-slider',
+    adaptiveHeight: true,
   }
 
   function handleOpen(pdf, name) {
@@ -62,7 +61,7 @@ export default function Produk() {
                   <div key={i}>
                     <img
                       src={img}
-                      alt={prod.name + ` foto ${i+1}`}
+                      alt={`${prod.name} foto ${i+1}`}
                       className="h-56 w-auto mx-auto object-contain rounded-lg shadow cursor-pointer border-2 border-orange-200"
                       onClick={() => handleOpen(prod.pdf, prod.name)}
                       loading="lazy"
@@ -84,21 +83,55 @@ export default function Produk() {
 
       {/* MODAL PDF */}
       {openModal && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center" onClick={handleClose}>
-          <div className="bg-white max-w-3xl w-full rounded-2xl shadow-2xl p-4 relative" style={{ maxHeight: "90vh" }} onClick={e => e.stopPropagation()}>
-            <button className="absolute top-2 right-3 text-3xl text-orange-600 font-bold hover:text-orange-900" onClick={handleClose}>&times;</button>
+        <div
+          className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center"
+          onClick={handleClose}
+        >
+          <div
+            className="bg-white rounded-2xl shadow-2xl p-4 relative"
+            style={{
+              width: "98vw",
+              maxWidth: 850,
+              maxHeight: "90vh",
+              overflow: "auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-2 right-3 text-3xl text-orange-600 font-bold hover:text-orange-900"
+              onClick={handleClose}
+            >&times;</button>
             <h3 className="mb-3 text-xl font-bold text-orange-700 text-center">{selectedTitle}</h3>
             <iframe
               src={selectedPdf}
               title="Detail Produk"
               width="100%"
-              height="500px"
-              className="rounded-xl border"
-              style={{ minHeight: 350, width: "100%" }}
+              height="500"
+              style={{
+                minHeight: 350,
+                maxHeight: "70vh",
+                width: "100%",
+                borderRadius: "16px",
+                border: "2px solid #fdba74",
+                background: "#fff",
+              }}
+              className="border"
             />
           </div>
         </div>
       )}
+
+      {/* SLICK CSS */}
+      <style global jsx>{`
+        @import "~slick-carousel/slick/slick.css";
+        @import "~slick-carousel/slick/slick-theme.css";
+        .product-image-slider .slick-dots li button:before {
+          color: #fb923c !important;
+        }
+      `}</style>
     </section>
   )
 }
