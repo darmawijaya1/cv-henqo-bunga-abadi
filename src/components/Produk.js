@@ -5,9 +5,9 @@ import Slider from 'react-slick'
 // Data produk
 const products = [
   {
-    name: "Pupuk Organik Cair",
-    image: "/images/produk/pupuk-cair.jpg",
-    pdf: "/pdf/produk/pupuk-cair.pdf"
+    name: "Probiotik Super Azolla",
+    image: "/images/produk/Probiotik Super Azolla.jpg",
+    pdf: "/pdf/produk/Probiotik Super Azolla.pdf"
   },
   {
     name: "Pupuk Kompos Padat",
