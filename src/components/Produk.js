@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Slider from 'react-slick'
 
+// Data produk
 const products = [
   {
     name: "Pupuk Organik Cair",
@@ -18,10 +19,10 @@ const products = [
     image: "/images/produk/bio-aktivator.jpg",
     pdf: "/pdf/produk/bio-aktivator.pdf"
   },
-  // Tambahkan produk lain sesuai kebutuhan
+  // Tambahkan produk lainnya sesuai kebutuhan...
 ]
 
-export default function ProdukPage() {
+export default function Produk() {
   const [openModal, setOpenModal] = useState(false)
   const [selectedPdf, setSelectedPdf] = useState(null)
   const [selectedTitle, setSelectedTitle] = useState('')
@@ -43,7 +44,6 @@ export default function ProdukPage() {
     setSelectedTitle(name)
     setOpenModal(true)
   }
-
   function handleClose() {
     setOpenModal(false)
     setSelectedPdf(null)
@@ -60,9 +60,9 @@ export default function ProdukPage() {
               <img
                 src={prod.image}
                 alt={prod.name}
-                className="h-48 w-auto object-contain mb-3 rounded-lg shadow"
-                style={{ cursor: 'pointer', border: "2px solid #fdba74" }}
+                className="h-48 w-auto object-contain mb-3 rounded-lg shadow cursor-pointer border-2 border-orange-200"
                 onClick={() => handleOpen(prod.pdf, prod.name)}
+                loading="lazy"
               />
               <div className="font-semibold text-orange-700 mb-1 text-center">{prod.name}</div>
               <button
@@ -75,7 +75,6 @@ export default function ProdukPage() {
           </div>
         ))}
       </Slider>
-
       {/* MODAL PDF */}
       {openModal && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center" onClick={handleClose}>
