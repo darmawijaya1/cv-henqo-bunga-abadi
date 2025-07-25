@@ -12,17 +12,25 @@ export default function About() {
         <div className="absolute left-4 top-4 opacity-30 animate-pulse">
           <Sparkles size={36} className="text-orange-300" />
         </div>
+
         {/* Heading */}
         <h2 className="text-4xl font-extrabold mb-4 text-orange-600 tracking-tight flex items-center gap-3">
           <Briefcase size={40} className="text-orange-500 drop-shadow" />
           Tentang Kami
         </h2>
-        {/* SEO Optimized Paragraph */}
+
+        {/* Optimized Paragraph */}
         <p className="mb-6 text-lg text-gray-800 leading-relaxed relative z-10">
-          <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> (sering juga disebut <b>CV Henqo</b> atau <b>Henqo Bunga Abadi</b>) adalah perusahaan <span className="bg-orange-50 px-1 rounded font-semibold">Konsultan Teknik Manajemen Industri &amp; Lingkungan</span>, General Contractor, Industri Pupuk Alam/Hara Mikro, Mikro Bio Bakteri, dan Perdagangan Umum.<br />
-          Nama <b>CV. Henqo Bunga Abadi</b> sering muncul di pencarian Google sebagai <b>cv henqo</b>, <b>henqo bunga abadi</b>, <b>konsultan teknik henqo</b>, <b>general contractor lampung</b>, <b>pupuk mikroba lampung</b>, dan berbagai variasi kata kunci lain terkait industri, konsultasi teknik, dan lingkungan di Lampung maupun Indonesia.<br />
-          Kami berkomitmen memberikan solusi <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">inovatif</span> dan <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">berkelanjutan</span> untuk sektor industri, pertanian, dan lingkungan.
+          <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> (dikenal juga sebagai <b>CV Henqo</b> atau <b>Henqo Bunga Abadi</b>) adalah perusahaan yang bergerak di bidang 
+          <span className="bg-orange-50 px-1 rounded font-semibold">konsultan teknik &amp; lingkungan</span>, 
+          <b> general contractor</b>, 
+          <b> produsen pupuk hayati dan mikroba</b>, serta 
+          <b> perdagangan umum</b>.<br /><br />
+          Kami berkomitmen menghadirkan solusi <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">inovatif</span> dan 
+          <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">berkelanjutan</span> untuk sektor industri, pertanian, dan lingkungan di Indonesia, khususnya di Lampung.<br /><br />
+          Nama kami sering ditemukan di Google melalui pencarian seperti: <b>cv henqo</b>, <b>henqo bunga abadi</b>, <b>konsultan teknik henqo</b>, <b>general contractor lampung</b>, dan <b>pupuk mikroba lampung</b>.
         </p>
+
         {/* VISI & MISI */}
         <div className="grid md:grid-cols-2 gap-7">
           <div className="group bg-gradient-to-br from-orange-50 via-orange-100 to-white rounded-2xl p-6 shadow hover:shadow-lg flex flex-col gap-2 transition-all border border-orange-100 hover:scale-[1.03] duration-200">
@@ -31,7 +39,7 @@ export default function About() {
               <span className="font-bold text-orange-700 text-lg">Visi</span>
             </div>
             <p className="text-gray-700 text-base">
-              Menjadi <b>mitra terpercaya</b> dalam solusi teknik, industri, dan lingkungan yang berkelanjutan &amp; inovatif.
+              Menjadi <b>mitra terpercaya</b> dalam layanan teknik, industri, dan lingkungan yang <b>berkelanjutan</b> dan <b>inovatif</b>.
             </p>
           </div>
           <div className="group bg-gradient-to-br from-orange-50 via-orange-100 to-white rounded-2xl p-6 shadow hover:shadow-lg flex flex-col gap-2 transition-all border border-orange-100 hover:scale-[1.03] duration-200">
@@ -40,13 +48,14 @@ export default function About() {
               <span className="font-bold text-orange-700 text-lg">Misi</span>
             </div>
             <ul className="list-disc ml-5 text-gray-700 space-y-1 text-base">
-              <li>Memberikan layanan terbaik di bidang konsultasi teknik dan lingkungan</li>
-              <li>Mengembangkan produk <b>pupuk alami</b> berkualitas tinggi</li>
-              <li>Menyediakan konstruksi &amp; solusi manajemen industri yang efisien</li>
-              <li>Inovasi produk berbasis <b>mikroorganisme</b> &amp; teknologi hijau</li>
+              <li>Menyediakan layanan terbaik di bidang konsultasi teknik &amp; lingkungan</li>
+              <li>Mengembangkan produk <b>pupuk hayati & mikroba</b> berkualitas tinggi</li>
+              <li>Menyediakan konstruksi &amp; solusi industri yang <b>efisien dan tepat guna</b></li>
+              <li>Mendorong inovasi berbasis <b>teknologi hijau & mikroorganisme</b></li>
             </ul>
           </div>
         </div>
+
         {/* Brand highlight */}
         <div className="mt-8 flex justify-end">
           <span className="inline-flex items-center gap-2 px-4 py-1 bg-orange-600/90 text-white rounded-xl text-sm shadow font-semibold tracking-wide">
