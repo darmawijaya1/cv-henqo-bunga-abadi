@@ -19,16 +19,17 @@ export default function About() {
           Tentang Kami
         </h2>
 
-        {/* Optimized Paragraph */}
+        {/* Simpler SEO-Friendly Paragraph */}
         <p className="mb-6 text-lg text-gray-800 leading-relaxed relative z-10">
-          <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> (dikenal juga sebagai <b>CV Henqo</b> atau <b>Henqo Bunga Abadi</b>) adalah perusahaan yang bergerak di bidang 
-          <span className="bg-orange-50 px-1 rounded font-semibold">konsultan teknik &amp; lingkungan</span>, 
+          <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> adalah perusahaan yang bergerak di bidang 
+          <b> konsultan teknik industri dan lingkungan</b>, 
           <b> general contractor</b>, 
-          <b> produsen pupuk hayati dan mikroba</b>, serta 
-          <b> perdagangan umum</b>.<br /><br />
-          Kami berkomitmen menghadirkan solusi <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">inovatif</span> dan 
-          <span className="text-orange-600 font-semibold underline decoration-wavy decoration-orange-400">berkelanjutan</span> untuk sektor industri, pertanian, dan lingkungan di Indonesia, khususnya di Lampung.<br /><br />
-          Nama kami sering ditemukan di Google melalui pencarian seperti: <b>cv henqo</b>, <b>henqo bunga abadi</b>, <b>konsultan teknik henqo</b>, <b>general contractor lampung</b>, dan <b>pupuk mikroba lampung</b>.
+          <b> produsen pupuk hayati & mikroba</b>, serta 
+          <b> perdagangan umum</b>. Kami hadir sebagai solusi untuk industri, pertanian, dan lingkungan dengan pendekatan yang 
+          <span className="text-orange-600 font-semibold"> inovatif</span>, 
+          <span className="text-orange-600 font-semibold"> efisien</span>, dan 
+          <span className="text-orange-600 font-semibold"> berkelanjutan</span>.<br /><br />
+          Berbasis di <b>Lampung</b>, kami telah melayani berbagai kebutuhan proyek di seluruh <b>Indonesia</b>, mulai dari pengolahan limbah, pembangunan fasilitas industri, hingga pengembangan produk pupuk organik berbasis mikroba.
         </p>
 
         {/* VISI & MISI */}
