@@ -4,6 +4,22 @@ import Slider from 'react-slick'
 
 const products = [
   {
+    name: "IPAL (Instalasi Pengolahan Air Limbah)",
+    images: [
+      "/images/produkPot samping IPAL.png",
+      "/images/produk/DIAGRAM PROSES IPAL.png",
+    ],
+    pdf: "/pdf/produk/DIAGRAM PROSES IPAL.pdf"
+  },
+  {
+    name: "IPAL (Instalasi Pengolahan Air Limbah)",
+    images: [
+      "/images/produkPot samping IPAL.png",
+      "/images/produk/DIAGRAM PROSES IPAL.png",
+    ],
+    pdf: "/pdf/produk/DIAGRAM PROSES IPAL.pdf"
+  },
+  {
     name: "Probiotik Super Azolla",
     images: [
       "/images/produk/Probiotik Super Azolla.jpg",
