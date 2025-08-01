@@ -6,18 +6,18 @@ const products = [
   {
     name: "IPAL (Instalasi Pengolahan Air Limbah)",
     images: [
-      "/images/produkPot samping IPAL.png",
+      "/images/produk/Pot samping IPAL.png",
       "/images/produk/DIAGRAM PROSES IPAL.png",
     ],
     pdf: "/pdf/produk/DIAGRAM PROSES IPAL.pdf"
   },
   {
-    name: "IPAL (Instalasi Pengolahan Air Limbah)",
+    name: "Water Treatmen",
     images: [
-      "/images/produkPot samping IPAL.png",
-      "/images/produk/DIAGRAM PROSES IPAL.png",
+      "/images/produk/Water1.png",
+      "/images/produk/Water2.png",
     ],
-    pdf: "/pdf/produk/DIAGRAM PROSES IPAL.pdf"
+    pdf: "/pdf/produk/Water.pdf"
   },
   {
     name: "Probiotik Super Azolla",
