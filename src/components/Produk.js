@@ -24,6 +24,8 @@ const products = [
     images: [
       "/images/produk/Probiotik Super Azolla.jpg",
       "/images/produk/Produk.jpg",
+      "/images/produk/Probiotik Super Azolla2.jpg",
+      "/images/produk/Produk3.jpg",
     ],
     pdf: "/pdf/produk/Probiotik Super Azolla.pdf"
   },
