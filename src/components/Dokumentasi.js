@@ -24,6 +24,15 @@ const activities = [
       "/images/dokumentasi/kg3.2.png"
     ]
   },
+  {
+    title: "Pemakaian pupuk organik oleh petani padi di provinsi Lampung",
+    images: [
+      "/images/dokumentasi/kg4.1.png",
+      "/images/dokumentasi/kg4.2.png",
+      "/images/dokumentasi/kg4.3.png",
+      "/images/dokumentasi/kg4.4.png"
+    ]
+  },
   // Tambahkan kegiatan lain di sini
 ]
 
