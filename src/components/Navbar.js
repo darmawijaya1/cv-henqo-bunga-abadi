@@ -4,13 +4,13 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const navLinks = [
-  { href: '/tentang', label: 'Tentang' },
+  { href: '/About', label: 'Tentang' },
   { href: '/portofolio', label: 'Portofolio' },
-  { href: '/layanan', label: 'Layanan' },
-  { href: '/produk', label: 'Produk' },
-  { href: '/legalitas', label: 'Legalitas' },
-  { href: '/dokumentasi', label: 'Dokumentasi' },
-  { href: '/kontak', label: 'Kontak' },
+  { href: '/Services', label: 'Layanan' },
+  { href: '/Produk', label: 'Produk' },
+  { href: '/LegalitasPage', label: 'Legalitas' },
+  { href: '/Dokumentasi', label: 'Dokumentasi' },
+  { href: '/ContakForm', label: 'Kontak' },
 ]
 
 export default function Navbar() {
