@@ -7,3 +7,6 @@ Host: https://cv-henqo-bunga-abadi.vercel.app
 
 # Sitemaps
 Sitemap: https://cv-henqo-bunga-abadi.vercel.app/sitemap.xml
+
+# Sitemaps
+Sitemap: https://cv-henqo-bunga-abadi.vercel.app/sitemap-0.xml
