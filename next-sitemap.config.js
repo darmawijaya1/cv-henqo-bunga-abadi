@@ -2,8 +2,10 @@
 module.exports = {
   siteUrl: 'https://cv-henqo-bunga-abadi.vercel.app',
   generateRobotsTxt: true,
-  outDir: './public',
+  generateIndexSitemap: true,
+  sitemapSize: 7000,
   changefreq: 'monthly',
   priority: 0.7,
-  sitemapSize: 5000,
+  exclude: [],
+  outDir: './public',
 };
