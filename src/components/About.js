@@ -1,4 +1,4 @@
-import { Briefcase, Leaf, TrendingUp, Sparkles } from "lucide-react"
+import { Briefcase, Leaf, TrendingUp, Sparkles, User } from "lucide-react"
 
 export default function About() {
   return (
@@ -19,7 +19,7 @@ export default function About() {
           Tentang Kami
         </h2>
 
-        {/* Simpler SEO-Friendly Paragraph */}
+        {/* Deskripsi Perusahaan */}
         <p className="mb-6 text-lg text-gray-800 leading-relaxed relative z-10">
           <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> adalah perusahaan yang bergerak di bidang 
           <b> konsultan teknik industri dan lingkungan</b>, 
@@ -57,7 +57,29 @@ export default function About() {
           </div>
         </div>
 
-        {/* Brand highlight */}
+        {/* STRUKTUR ORGANISASI */}
+        <div className="mt-10">
+          <h3 className="text-2xl font-bold text-orange-700 mb-4">Struktur Organisasi</h3>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="bg-gradient-to-br from-orange-50 via-orange-100 to-white p-4 rounded-xl shadow border border-orange-100 text-center">
+              <User className="mx-auto mb-2 text-orange-500" size={32} />
+              <p className="text-sm font-semibold text-orange-600">Direktur</p>
+              <p className="text-lg font-bold text-gray-800">Ir. Hendra Achmad</p>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 via-orange-100 to-white p-4 rounded-xl shadow border border-orange-100 text-center">
+              <User className="mx-auto mb-2 text-orange-500" size={32} />
+              <p className="text-sm font-semibold text-orange-600">Wakil Direktur</p>
+              <p className="text-lg font-bold text-gray-800">M. Vhize Jenna Afif El. Imami, SH</p>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 via-orange-100 to-white p-4 rounded-xl shadow border border-orange-100 text-center">
+              <User className="mx-auto mb-2 text-orange-500" size={32} />
+              <p className="text-sm font-semibold text-orange-600">Bendahara</p>
+              <p className="text-lg font-bold text-gray-800">Qonita Nurhayati, SH</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Highlight */}
         <div className="mt-8 flex justify-end">
           <span className="inline-flex items-center gap-2 px-4 py-1 bg-orange-600/90 text-white rounded-xl text-sm shadow font-semibold tracking-wide">
             <Sparkles size={18} className="text-white" />
