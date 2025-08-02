@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../globals.css'
 import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
 import Head from 'next/head'
