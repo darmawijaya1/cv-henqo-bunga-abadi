@@ -16,6 +16,11 @@ const LEGALITAS = [
     pdf: "/pdf/legalitas/nibcv.pdf"
   },
   {
+    title: "SPPKP",
+    img: "/images/legalitas/sppkp.png",
+    pdf: "/pdf/legalitas/sppkp.pdf"
+  },
+  {
     title: "Akta Pendirian CV",
     img: "/images/legalitas/akta.png",
     pdf: "/pdf/legalitas/aktacv.pdf"
