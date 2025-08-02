@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/Produk', label: 'Produk' },
   { href: '/LegalitasPage', label: 'Legalitas' },
   { href: '/Dokumentasi', label: 'Dokumentasi' },
-  { href: '/ContakForm', label: 'Kontak' },
+  { href: '/ContactForm', label: 'Kontak' },
 ]
 
 export default function Navbar() {
