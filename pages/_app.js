@@ -2,6 +2,9 @@ import './globals.css'  // jika _app.js ada di dalam /pages/
 import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
 import Head from 'next/head'
+import Hero from './Hero'
+import About from './About'
+import Services from './Services'
 
 export default function MyApp({ Component, pageProps }) {
   return (
