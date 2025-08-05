@@ -100,6 +100,8 @@ export default function Portofolio() {
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center tracking-wide">
+      </h2>
+      <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center tracking-wide">
         Pengalaman Kerja
       </h2>
       <div className="flex flex-col gap-3">

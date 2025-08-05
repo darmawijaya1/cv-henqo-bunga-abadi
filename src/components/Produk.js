@@ -59,6 +59,7 @@ export default function Produk() {
 
   return (
     <section className="max-w-5xl mx-auto py-12 px-4">
+      <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center"></h2>
       <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center">Produk Kami</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {products.map((prod, idx) => (

@@ -6,6 +6,8 @@ export default function CompanyProfile() {
   return (
     <section className="max-w-4xl mx-auto py-16 px-6 bg-gradient-to-br from-orange-50 via-white to-orange-100 rounded-3xl shadow-xl">
       <h1 className="text-4xl font-extrabold text-orange-700 text-center mb-8 tracking-tight">
+      </h1>
+    <h1 className="text-4xl font-extrabold text-orange-700 text-center mb-8 tracking-tight">
         Profil Perusahaan
       </h1>
 

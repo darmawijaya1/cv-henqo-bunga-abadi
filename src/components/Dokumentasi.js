@@ -46,6 +46,7 @@ export default function Dokumentasi() {
 
   return (
     <section className="max-w-5xl mx-auto py-12 px-4">
+      <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center"></h2>
       <h2 className="text-3xl font-bold mb-8 text-orange-600 text-center">Dokumentasi Kegiatan</h2>
 
       <div className="flex flex-col gap-10">
