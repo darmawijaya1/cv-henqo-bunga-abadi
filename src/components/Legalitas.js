@@ -52,6 +52,7 @@ export default function Legalitas() {
 
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
+      <h2 className="text-3xl font-bold mb-8 text-orange-600"></h2>
       <h2 className="text-3xl font-bold mb-8 text-orange-600">Legalitas & Legal Form</h2>
       <div className="grid gap-6 md:grid-cols-3">
         {LEGALITAS.map((item) => (
