@@ -20,17 +20,7 @@ const products = [
     pdf: "/pdf/produk/Water.pdf"
   },
   {
-    name: "Probiotik Super Azolla",
-    images: [
-      "/images/produk/Probiotik Super Azolla.jpg",
-      "/images/produk/Produk.jpg",
-      "/images/produk/Probiotik Super Azolla2.jpg",
-      "/images/produk/Produk3.jpg",
-    ],
-    pdf: "/pdf/produk/Probiotik Super Azolla.pdf"
-  },
-  {
-    name: "MicroBio Bacteri Super Azolla",
+    name: "Microba / Bakteri Probiotik Super Azolla",
     images: [
       "/images/produk/MicroBio Bacteri Super Azolla.jpg",
       "/images/produk/Produk.jpg",
