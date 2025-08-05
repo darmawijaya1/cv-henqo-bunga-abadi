@@ -18,76 +18,64 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
 
+  // Disable scroll saat menu mobile aktif
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
   }, [open])
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-orange-200">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-orange-200">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-4">
             <img
               src="/images/logo.png"
               alt="Logo"
-              className="w-14 h-14 object-cover rounded-3xl shadow-md border-2 border-orange-400"
+              className="w-12 h-12 object-cover rounded-xl shadow-md border-2 border-orange-400"
             />
-            <span className="text-xl sm:text-2xl font-extrabold text-orange-600 tracking-wide whitespace-nowrap">
+            <span className="text-xl font-extrabold text-orange-600 tracking-wide whitespace-nowrap">
               CV. Henqo Bunga Abadi
             </span>
           </Link>
 
-          {/* Hamburger Button */}
+          {/* Hamburger */}
           <button
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             aria-expanded={open}
             className="md:hidden p-3 rounded-lg hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-orange-400"
           >
-            <div className="relative w-8 h-8 flex flex-col justify-center items-center">
+            <div className="relative w-7 h-7 flex flex-col justify-center items-center">
               <span
                 className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-transform duration-300 ${
-                  open ? 'rotate-45 top-4' : 'top-2'
+                  open ? 'rotate-45 top-3.5' : 'top-2'
                 }`}
               />
               <span
                 className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-opacity duration-300 ${
-                  open ? 'opacity-0' : 'top-4'
+                  open ? 'opacity-0' : 'top-3.5'
                 }`}
               />
               <span
                 className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-transform duration-300 ${
-                  open ? '-rotate-45 top-4' : 'top-6'
+                  open ? '-rotate-45 top-3.5' : 'top-5'
                 }`}
               />
             </div>
           </button>
 
-          {/* Navigation Menu */}
-          <ul
-            className={`
-              fixed md:static top-[72px] left-0 right-0 bg-white md:bg-transparent border-t md:border-none
-              py-6 md:py-0 px-8 md:px-0 flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0
-              shadow-md md:shadow-none rounded-b-lg md:rounded-none
-              transition-all duration-300 ease-in-out overflow-hidden
-              ${open ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}
-              md:opacity-100 md:max-h-full
-            `}
-          >
+          {/* Menu Desktop */}
+          <ul className="hidden md:flex space-x-8">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
                 <Link
                   href={href}
-                  onClick={() => setOpen(false)}
-                  className={`
-                    block px-5 py-2 rounded-xl font-medium
-                    ${
-                      pathname === href
-                        ? 'bg-orange-200 text-orange-800 shadow-lg'
-                        : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
-                    }
-                    transition-colors duration-200
-                  `}
+                  className={`px-4 py-2 rounded-lg font-medium ${
+                    pathname === href
+                      ? 'bg-orange-200 text-orange-800 shadow'
+                      : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
+                  } transition-colors duration-200`}
                 >
                   {label}
                 </Link>
@@ -95,9 +83,30 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
+
+        {/* Menu Mobile */}
+        {open && (
+          <ul className="md:hidden bg-white shadow-md border-t border-orange-200 py-4 flex flex-col space-y-3 px-6">
+            {navLinks.map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  onClick={() => setOpen(false)}
+                  className={`block px-4 py-2 rounded-lg font-medium ${
+                    pathname === href
+                      ? 'bg-orange-200 text-orange-800 shadow'
+                      : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
+                  } transition-colors duration-200`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
 
-      {/* Overlay saat menu mobile terbuka */}
+      {/* Overlay saat menu mobile aktif */}
       {open && (
         <div
           onClick={() => setOpen(false)}
@@ -106,10 +115,10 @@ export default function Navbar() {
         />
       )}
 
-      {/* Padding agar konten tidak tertutup navbar */}
+      {/* Padding supaya konten tidak tertutup navbar */}
       <style jsx global>{`
         body {
-          padding-top: 72px;
+          padding-top: 64px; /* Tinggi navbar */
         }
       `}</style>
     </>
