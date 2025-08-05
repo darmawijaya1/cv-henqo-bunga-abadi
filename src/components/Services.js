@@ -35,8 +35,6 @@ export default function Services() {
             <h3 className="text-xl font-bold text-orange-700 mb-2">{srv.title}</h3>
             <p className="text-gray-700 mb-3">{srv.desc}</p>
             <div className="opacity-0 group-hover:opacity-100 transition absolute inset-0 flex flex-col justify-end items-center bg-orange-50 bg-opacity-90 px-6 pb-6 pointer-events-none">
-              <span className="text-orange-700 font-semibold text-sm">Edukasi:</span>
-              <p className="text-xs text-gray-800 mt-1">{srv.edukasi}</p>
             </div>
           </div>
         ))}
