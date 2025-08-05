@@ -1,5 +1,5 @@
-import Profil from '../src/components/Profil'
+import profil from '../src/components/Profil'
 
-export default function ProfilPage() {
-  return <Profil />
+export default function Profil() {
+  return <profil />
 }
