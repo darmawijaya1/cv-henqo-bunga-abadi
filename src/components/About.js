@@ -39,26 +39,26 @@ export default function About() {
           <ul className="space-y-4 pl-4">
             <li>
               <strong>A. STUDI AMDAL (Analisis Mengenai Dampak Lingkungan)</strong><br />
-              KA: Kerangka Acuan<br />
-              AMDAL: Analisis Dampak Lingkungan<br />
-              RKL: Rencana Pengelolaan Lingkungan<br />
-              RPL: Rencana Pemantauan Lingkungan<br />
+              KA        : Kerangka Acuan<br />
+              AMDAL     : Analisis Dampak Lingkungan<br />
+              RKL       : Rencana Pengelolaan Lingkungan<br />
+              RPL       : Rencana Pemantauan Lingkungan<br />
               Executive Summary
             </li>
             <li>
               <strong>B. KEGIATAN YANG TIDAK WAJIB AMDAL</strong><br />
-              UKL: Upaya Kelola Lingkungan<br />
-              UPL: Upaya Pemantauan Lingkungan
+              UKL       : Upaya Kelola Lingkungan<br />
+              UPL       : Upaya Pemantauan Lingkungan
             </li>
             <li>
               <strong>C. STUDI KELAYAKAN</strong><br />
-              TPA: Tempat Pembuangan Akhir (Landfill)<br />
+              TPA       : Tempat Pembuangan Akhir (Landfill)<br />
               Zona / Kawasan Industri
             </li>
             <li>
               <strong>D. PERENCANAAN IPL (Instalasi Pengolah Limbah)</strong><br />
-              IPL Cair: industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, IPL cair rumah sakit & limbah cair domestik atau industri.<br />
-              IPL Gas: industri pelapisan logam, pabrik gula, pengecoran logam, dll.
+              IPL Cair  : industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, IPL cair rumah sakit & limbah cair domestik atau industri.<br />
+              IPL Gas   : industri pelapisan logam, pabrik gula, pengecoran logam, dll.
             </li>
             <li>
               <strong>E. MANAJEMEN LINGKUNGAN</strong><br />
