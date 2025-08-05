@@ -5,12 +5,12 @@ const SERVICES = [
   {
     icon: <Briefcase size={42} className="text-orange-500 transition-transform duration-300 group-hover:scale-110" />,
     title: "Konsultan Teknik & Lingkungan",
-    desc: "Konsultasi teknik manajemen industri, pengelolaan limbah, analisis dampak lingkungan, dan efisiensi produksi.",
+    desc: "Spesialis WTP (Water Treatment Plan) & WWTP (Waste Water Treatment Plan)",
   },
   {
     icon: <Construction size={42} className="text-orange-500 transition-transform duration-300 group-hover:scale-110" />,
     title: "Kontraktor & Perdagangan Umum",
-    desc: "Pelaksanaan proyek konstruksi skala besar (industri, infrastruktur, bangunan umum).",
+    desc: "Pelaksanaan proyek konstruksi (industri, infrastruktur).",
   },
   {
     icon: <Leaf size={42} className="text-orange-500 transition-transform duration-300 group-hover:scale-110" />,
