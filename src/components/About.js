@@ -41,26 +41,26 @@ export default function About() {
           <ul className="space-y-4 pl-4 list-disc marker:text-orange-500">
             <li>
               <strong>A. STUDI AMDAL (Analisis Mengenai Dampak Lingkungan)</strong><br />
-              KA: Kerangka Acuan<br />
-              AMDAL: Analisis Dampak Lingkungan<br />
-              RKL: Rencana Pengelolaan Lingkungan<br />
-              RPL: Rencana Pemantauan Lingkungan<br />
+              KA          : Kerangka Acuan<br />
+              AMDAL       : Analisis Dampak Lingkungan<br />
+              RKL         : Rencana Pengelolaan Lingkungan<br />
+              RPL         : Rencana Pemantauan Lingkungan<br />
               Executive Summary
             </li>
             <li>
               <strong>B. KEGIATAN YANG TIDAK WAJIB AMDAL</strong><br />
-              UKL: Upaya Kelola Lingkungan<br />
-              UPL: Upaya Pemantauan Lingkungan
+              UKL         : Upaya Kelola Lingkungan<br />
+              UPL         : Upaya Pemantauan Lingkungan
             </li>
             <li>
               <strong>C. STUDI KELAYAKAN</strong><br />
-              TPA: Tempat Pembuangan Akhir (Landfill)<br />
+              TPA         : Tempat Pembuangan Akhir (Landfill)<br />
               Zona / Kawasan Industri
             </li>
             <li>
               <strong>D. PERENCANAAN IPL (Instalasi Pengolah Limbah)</strong><br />
-              IPL Cair: Industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, rumah sakit, dan limbah cair domestik.<br />
-              IPL Gas: Industri pelapisan logam, pabrik gula, pengecoran logam, dan sebagainya.
+              IPL Cair    : Industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, rumah sakit, dan limbah cair domestik.<br />
+              IPL Gas     : Industri pelapisan logam, pabrik gula, pengecoran logam, dan sebagainya.
             </li>
             <li>
               <strong>E. MANAJEMEN LINGKUNGAN</strong><br />
