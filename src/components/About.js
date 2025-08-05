@@ -41,50 +41,38 @@ export default function About() {
           <ul className="space-y-4 pl-4 list-disc marker:text-orange-500">
             <li>
               <strong>A. STUDI AMDAL (Analisis Mengenai Dampak Lingkungan)</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">KA :</span> Kerangka Acuan<br />
-                <span className="font-semibold">AMDAL :</span> Analisis Dampak Lingkungan<br />
-                <span className="font-semibold">RKL :</span> Rencana Pengelolaan Lingkungan<br />
-                <span className="font-semibold">RPL :</span> Rencana Pemantauan Lingkungan<br />
-                <span className="font-semibold">Executive Summary :</span> Executive Summary
-              </div>
+              KA          : Kerangka Acuan<br />
+              AMDAL       : Analisis Dampak Lingkungan<br />
+              RKL         : Rencana Pengelolaan Lingkungan<br />
+              RPL         : Rencana Pemantauan Lingkungan<br />
+              Executive Summary
             </li>
             <li>
               <strong>B. KEGIATAN YANG TIDAK WAJIB AMDAL</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">UKL :</span> Upaya Kelola Lingkungan<br />
-                <span className="font-semibold">UPL :</span> Upaya Pemantauan Lingkungan
-              </div>
+              UKL         : Upaya Kelola Lingkungan<br />
+              UPL         : Upaya Pemantauan Lingkungan
             </li>
             <li>
               <strong>C. STUDI KELAYAKAN</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">TPA :</span> Tempat Pembuangan Akhir (Landfill)<br />
-                <span className="font-semibold">Zona / Kawasan Industri :</span> Zona / Kawasan Industri
-              </div>
+              TPA         : Tempat Pembuangan Akhir (Landfill)<br />
+              Zona / Kawasan Industri
             </li>
             <li>
               <strong>D. PERENCANAAN IPL (Instalasi Pengolah Limbah)</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">IPL Cair :</span> Industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, rumah sakit, dan limbah cair domestik.<br />
-                <span className="font-semibold">IPL Gas :</span> Industri pelapisan logam, pabrik gula, pengecoran logam, dan sebagainya.
-              </div>
+              IPL Cair    : Industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi, rumah sakit, dan limbah cair domestik.<br />
+              IPL Gas     : Industri pelapisan logam, pabrik gula, pengecoran logam, dan sebagainya.
             </li>
             <li>
               <strong>E. MANAJEMEN LINGKUNGAN</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">Lingkungan Fisik-Kimia :</span> Lingkungan Fisik-Kimia<br />
-                <span className="font-semibold">Lingkungan Biotis :</span> Lingkungan Biotis<br />
-                <span className="font-semibold">Lingkungan Sosial Ekonomi :</span> Lingkungan Sosial Ekonomi<br />
-                <span className="font-semibold">Termasuk pengoperasian :</span> Termasuk pengoperasian serta perawatan purna jual IPL.
-              </div>
+              Lingkungan Fisik-Kimia<br />
+              Lingkungan Biotis<br />
+              Lingkungan Sosial Ekonomi<br />
+              Termasuk pengoperasian serta perawatan purna jual IPL.
             </li>
             <li>
               <strong>F. PERENCANAAN TEKNIK PENGAWASAN</strong><br />
-              <div className="grid grid-cols-[100px_1fr] gap-2 pl-4">
-                <span className="font-semibold">Bangunan Gedung dan Pabrik :</span> Bangunan Gedung dan Pabrik<br />
-                <span className="font-semibold">Perumahan / Pemukiman :</span> Perumahan / Pemukiman
-              </div>
+              Bangunan Gedung dan Pabrik<br />
+              Perumahan / Pemukiman
             </li>
           </ul>
 
