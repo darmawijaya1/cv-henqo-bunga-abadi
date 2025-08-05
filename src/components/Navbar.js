@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full z-50 backdrop-blur-xl bg-white/70 shadow-xl border-b border-orange-100">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/70 shadow-xl border-b border-orange-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 md:py-3">
           <Link
             href="/"
