@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 
 const navLinks = [
   { href: '/About', label: 'Tentang' },
-  { href: '/Profil', label: 'Profil' },
   { href: '/portofolio', label: 'Portofolio' },
   { href: '/Services', label: 'Layanan' },
   { href: '/Produk', label: 'Produk' },
@@ -18,95 +17,84 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
 
-  // Disable scroll saat menu mobile aktif
+  // Disable scroll saat menu mobile terbuka
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
   }, [open])
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-orange-200">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-4">
+      <nav className="fixed w-full z-50 backdrop-blur-xl bg-white/70 shadow-xl border-b border-orange-100">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 md:py-3">
+          <Link
+            href="/"
+            className="flex items-center font-extrabold text-xl text-orange-600 tracking-wide gap-2 hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-orange-400 rounded"
+          >
             <img
               src="/images/logo.png"
               alt="Logo"
-              className="w-12 h-12 object-cover rounded-xl shadow-md border-2 border-orange-400"
+              className="w-11 h-11 rounded-2xl shadow-elegant border border-orange-100"
             />
-            <span className="text-xl font-extrabold text-orange-600 tracking-wide whitespace-nowrap">
-              CV. Henqo Bunga Abadi
-            </span>
+            <span className="hidden sm:block drop-shadow">CV. Henqo Bunga Abadi</span>
           </Link>
 
-          {/* Hamburger */}
+          {/* Hamburger menu */}
           <button
             onClick={() => setOpen(!open)}
+            className="md:hidden flex items-center justify-center p-2 rounded-lg transition hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-orange-400"
             aria-label="Toggle menu"
             aria-expanded={open}
-            className="md:hidden p-3 rounded-lg hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-orange-400"
           >
             <div className="relative w-7 h-7 flex flex-col justify-center items-center">
               <span
-                className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-transform duration-300 ${
+                className={`block absolute h-0.5 w-6 bg-orange-600 transform transition duration-300 ease-in-out ${
                   open ? 'rotate-45 top-3.5' : 'top-2'
                 }`}
               />
               <span
-                className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-opacity duration-300 ${
+                className={`block absolute h-0.5 w-6 bg-orange-600 transition-all duration-300 ease-in-out ${
                   open ? 'opacity-0' : 'top-3.5'
                 }`}
               />
               <span
-                className={`block absolute h-0.5 w-7 bg-orange-600 rounded transition-transform duration-300 ${
+                className={`block absolute h-0.5 w-6 bg-orange-600 transform transition duration-300 ease-in-out ${
                   open ? '-rotate-45 top-3.5' : 'top-5'
                 }`}
               />
             </div>
           </button>
 
-          {/* Menu Desktop */}
-          <ul className="hidden md:flex space-x-8">
-            {navLinks.map(({ href, label }) => (
-              <li key={href}>
+          {/* Menu */}
+          <ul
+            className={`
+              flex flex-col md:flex-row md:space-x-2 lg:space-x-6 space-y-2 md:space-y-0 
+              fixed md:static top-16 left-0 right-0 bg-white/90 md:bg-transparent border-b md:border-none shadow md:shadow-none
+              py-5 md:py-0 px-5 md:px-0 transition-all duration-300
+              ${open ? 'block' : 'hidden'} md:flex
+            `}
+          >
+            {navLinks.map(link => (
+              <li key={link.href}>
                 <Link
-                  href={href}
-                  className={`px-4 py-2 rounded-lg font-medium ${
-                    pathname === href
-                      ? 'bg-orange-200 text-orange-800 shadow'
-                      : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
-                  } transition-colors duration-200`}
+                  href={link.href}
+                  className={`block px-4 py-2 rounded-xl font-semibold transition-colors duration-200
+                    ${
+                      pathname === link.href
+                        ? 'bg-orange-100 text-orange-700 shadow'
+                        : 'hover:bg-orange-50 hover:text-orange-600 text-gray-700'
+                    }
+                  `}
+                  onClick={() => setOpen(false)}
                 >
-                  {label}
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-
-        {/* Menu Mobile */}
-        {open && (
-          <ul className="md:hidden bg-white shadow-md border-t border-orange-200 py-4 flex flex-col space-y-3 px-6">
-            {navLinks.map(({ href, label }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className={`block px-4 py-2 rounded-lg font-medium ${
-                    pathname === href
-                      ? 'bg-orange-200 text-orange-800 shadow'
-                      : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
-                  } transition-colors duration-200`}
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
       </nav>
 
-      {/* Overlay saat menu mobile aktif */}
+      {/* Overlay gelap saat menu mobile aktif */}
       {open && (
         <div
           onClick={() => setOpen(false)}
@@ -115,10 +103,10 @@ export default function Navbar() {
         />
       )}
 
-      {/* Padding supaya konten tidak tertutup navbar */}
+      {/* Padding agar konten tidak tertutup navbar fixed */}
       <style jsx global>{`
         body {
-          padding-top: 64px; /* Tinggi navbar */
+          padding-top: 64px;
         }
       `}</style>
     </>
