@@ -6,25 +6,16 @@ const SERVICES = [
     icon: <Briefcase size={38} className="text-orange-500 mb-2" />,
     title: "Konsultan Teknik & Lingkungan",
     desc: "Konsultasi teknik manajemen industri, pengelolaan limbah, analisis dampak lingkungan, dan efisiensi produksi.",
-    edukasi: "Kami membantu perusahaan memahami, mengelola, dan mematuhi regulasi lingkungan serta meningkatkan daya saing industri."
   },
   {
     icon: <Construction size={38} className="text-orange-500 mb-2" />,
-    title: "General Contractor",
+    title: "Kontraktor & Perdagangan Umum",
     desc: "Pelaksanaan proyek konstruksi skala besar (industri, infrastruktur, bangunan umum).",
-    edukasi: "Proyek konstruksi dikerjakan tim ahli, mengutamakan kualitas, ketepatan waktu, dan keselamatan kerja."
   },
   {
     icon: <Leaf size={38} className="text-orange-500 mb-2" />,
-    title: "Industri Pupuk & Mikroba",
-    desc: "Pembuatan pupuk berbasis bahan alami & mikroba untuk pertanian/perikanan.",
-    edukasi: "Produk kami mendukung pertanian ramah lingkungan, memperbaiki kualitas tanah dan hasil panen."
-  },
-  {
-    icon: <Globe size={38} className="text-orange-500 mb-2" />,
-    title: "Perdagangan Umum",
-    desc: "Perdagangan produk unggulan untuk kebutuhan pasar domestik & internasional.",
-    edukasi: "Kami siap menjadi mitra ekspor-impor produk terbaik Indonesia, membuka akses global untuk pelanggan."
+    title: "Microba / Bakteri Probiotik",
+    desc: "Pembuatan mikroba bakteri baik",
   },
 ]
 
