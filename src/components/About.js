@@ -32,7 +32,7 @@ export default function About() {
         {/* Body Text */}
         <article className="space-y-6 text-justify text-base leading-relaxed text-gray-800 relative z-10">
           <p>
-            Menyadari akan pentingnya upaya pelestarian lingkungan sebagai bagian dari pembangunan berwawasan lingkungan, <strong>CV. TIRTA SUEZ LAMPUNG</strong> yang sejak berdirinya mengkhususkan diri di bidang Konsultan Teknik, Manajemen, Industri dan Lingkungan merasa terpanggil untuk semakin berperan serta secara aktif dalam penanganan masalah lingkungan hidup.
+            Menyadari akan pentingnya upaya pelestarian lingkungan sebagai bagian dari pembangunan berwawasan lingkungan, <strong>CV. Henqo Bunga Abadi</strong> yang sejak berdirinya mengkhususkan diri di bidang Konsultan Teknik, Manajemen, Industri dan Lingkungan merasa terpanggil untuk semakin berperan serta secara aktif dalam penanganan masalah lingkungan hidup.
           </p>
           <p>
             Bertekad dengan kepercayaan diri yang tinggi dan didukung oleh Tenaga Ahli Teknik dari berbagai disiplin yang mumpuni, kami menawarkan jasa konsultasi di bidang lingkungan dan perencanaan teknik untuk keterlaksanaan pembangunan di berbagai sektor seperti:
@@ -77,7 +77,7 @@ export default function About() {
           </ul>
 
           <p>
-            Sadar akan pentingnya peranan Konsultan Teknik, Manajemen, Industri dan Lingkungan dalam pelaksanaan Program Pembangunan Nasional, kami – Direksi dan seluruh karyawan <strong>CV. TIRTA SUEZ LAMPUNG</strong> – dengan semangat profesionalisme dan rasa tanggung jawab yang tinggi, siap melaksanakan segala tugas dan kepercayaan yang diberikan dengan sebaik-baiknya.
+            Sadar akan pentingnya peranan Konsultan Teknik, Manajemen, Industri dan Lingkungan dalam pelaksanaan Program Pembangunan Nasional, kami – Direksi dan seluruh karyawan <strong>CV. Henqo Bunga Abadi</strong> – dengan semangat profesionalisme dan rasa tanggung jawab yang tinggi, siap melaksanakan segala tugas dan kepercayaan yang diberikan dengan sebaik-baiknya.
           </p>
         </article>
 
