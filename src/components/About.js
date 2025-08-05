@@ -2,9 +2,9 @@ import { Briefcase, Leaf, TrendingUp, Sparkles, User } from "lucide-react"
 
 export default function About() {
   return (
-    <section className="max-w-3xl mx-auto py-16 px-4">
+    <section className="max-w-4xl mx-auto py-16 px-4">
       <div className="bg-white/95 rounded-3xl shadow-2xl p-8 relative overflow-hidden border border-orange-100 backdrop-blur-sm">
-        {/* Decorative Gradients & Icons */}
+        {/* Decorative Icons & Gradients */}
         <div className="absolute -top-10 -left-10 w-52 h-52 bg-gradient-to-br from-orange-200 via-orange-50 to-white rounded-full blur-2xl opacity-40 pointer-events-none" />
         <div className="absolute right-0 top-0 opacity-10 pointer-events-none select-none">
           <Leaf size={130} className="text-orange-300" />
@@ -19,45 +19,55 @@ export default function About() {
           Tentang Kami
         </h2>
 
-        {/* Deskripsi Perusahaan */}
-        <p className="mb-6 text-lg text-gray-800 leading-relaxed relative z-10">
-          <span className="font-bold text-orange-700">CV. Henqo Bunga Abadi</span> adalah perusahaan yang bergerak di bidang 
-          <b> konsultan teknik industri dan lingkungan</b>, 
-          <b> general contractor</b>, 
-          <b> produsen pupuk hayati & mikroba</b>, serta 
-          <b> perdagangan umum</b>. Kami hadir sebagai solusi untuk industri, pertanian, dan lingkungan dengan pendekatan yang 
-          <span className="text-orange-600 font-semibold"> inovatif</span>, 
-          <span className="text-orange-600 font-semibold"> efisien</span>, dan 
-          <span className="text-orange-600 font-semibold"> berkelanjutan</span>.<br /><br />
-          Berbasis di <b>Lampung</b>, kami telah melayani berbagai kebutuhan proyek di seluruh <b>Indonesia</b>, mulai dari pengolahan limbah, pembangunan fasilitas industri, hingga pengembangan produk pupuk organik berbasis mikroba.
+        {/* Company Description */}
+        <p className="mb-6 text-lg text-gray-800 leading-relaxed text-justify relative z-10">
+          Menyadari akan pentingnya upaya pelestarian lingkungan sebagai bagian dari pembangunan berwawasan lingkungan, <b>CV. TIRTA SUEZ LAMPUNG</b> yang sejak berdirinya mengkhususnya diri di bidang Konsultan Teknik, Manajemen, Industri dan Lingkungan merasa terpanggil untuk semakin berperan serta dan berpartisipasi secara aktif dalam berbagai penanganan masalah lingkungan hidup.
+          <br /><br />
+          Bertekat dengan kepercayaan diri yang tinggi dan didukung Tenaga Ahli Teknik dari berbagai disiplin yang mumpuni, mendorong kami untuk menawarkan jasa konsultasi di bidang lingkungan dan perencanaan teknik keterlaksanaan pembangunan di segala bidang seperti:
         </p>
 
-        {/* VISI & MISI */}
-        <div className="grid md:grid-cols-2 gap-7">
-          <div className="group bg-gradient-to-br from-orange-50 via-orange-100 to-white rounded-2xl p-6 shadow hover:shadow-lg flex flex-col gap-2 transition-all border border-orange-100 hover:scale-[1.03] duration-200">
-            <div className="flex items-center gap-2 mb-1">
-              <TrendingUp size={26} className="text-orange-500 group-hover:scale-110 transition" />
-              <span className="font-bold text-orange-700 text-lg">Visi</span>
-            </div>
-            <p className="text-gray-700 text-base">
-              Menjadi <b>mitra terpercaya</b> dalam layanan teknik, industri, dan lingkungan yang <b>berkelanjutan</b> dan <b>inovatif</b>.
-            </p>
+        <div className="text-gray-800 leading-relaxed text-justify space-y-5 text-base">
+          <div>
+            <b>A. STUDI AMDAL (ANALISIS MENGENAI DAMPAK LINGKUNGAN)</b><br />
+            KA : Kerangka Acuan<br />
+            AMDAL : Analisis Dampak Lingkungan<br />
+            RKL : Rencana Pengelolaan Lingkungan<br />
+            RPL : Rencana Pemantauan Lingkungan<br />
+            Executive Summary
           </div>
-          <div className="group bg-gradient-to-br from-orange-50 via-orange-100 to-white rounded-2xl p-6 shadow hover:shadow-lg flex flex-col gap-2 transition-all border border-orange-100 hover:scale-[1.03] duration-200">
-            <div className="flex items-center gap-2 mb-1">
-              <Leaf size={26} className="text-orange-500 group-hover:scale-110 transition" />
-              <span className="font-bold text-orange-700 text-lg">Misi</span>
-            </div>
-            <ul className="list-disc ml-5 text-gray-700 space-y-1 text-base">
-              <li>Menyediakan layanan terbaik di bidang konsultasi teknik &amp; lingkungan</li>
-              <li>Mengembangkan produk <b>pupuk hayati & mikroba</b> berkualitas tinggi</li>
-              <li>Menyediakan konstruksi &amp; solusi industri yang <b>efisien dan tepat guna</b></li>
-              <li>Mendorong inovasi berbasis <b>teknologi hijau & mikroorganisme</b></li>
-            </ul>
+          <div>
+            <b>B. KEGIATAN YANG TIDAK WAJIB AMDAL</b><br />
+            UKL : Upaya Kelola Lingkungan<br />
+            UPL : Upaya Pemantauan Lingkungan
           </div>
+          <div>
+            <b>C. STUDI KELAYAKAN</b><br />
+            TPA : Tempat Pembuangan Akhir (Landfill)<br />
+            Zona / Kawasan Industri
+          </div>
+          <div>
+            <b>D. PERENCANAAN IPL (Instalasi Pengolah Limbah)</b><br />
+            IPL Cair: untuk industri kecil, kulit, tapioka/aci, kertas, rokok/cengkeh, alkohol, pelapisan logam, farmasi dan sebagainya, IPL cair Rumah Sakit dan limbah cair domestik maupun limbah industri lainnya.<br />
+            IPL Gas: untuk industri pelapisan logam, pabrik gula, pengecoran logam dan sebagainya.
+          </div>
+          <div>
+            <b>E. MANAJEMEN LINGKUNGAN</b><br />
+            Lingkungan Fisik-Kimia<br />
+            Lingkungan Biotis<br />
+            Lingkungan Sosial Ekonomi<br />
+            Termasuk pengoperasian serta perawatan purna jual IPL.
+          </div>
+          <div>
+            <b>F. PERENCANAAN TEKNIK PENGAWASAN</b><br />
+            Bangunan Gedung dan Pabrik<br />
+            Perumahan / Pemukiman
+          </div>
+          <p>
+            Sadar akan pentingnya peranan Konsultan Teknik, Manajemen, Industri dan Lingkungan dalam rangka pelaksanaan Program Pembangunan Nasional, dengan dilandasi oleh semangat profesionalisme dan pengabdian terhadap kepentingan Nusa dan Bangsa, Direksi dan segenap karyawan <b>CV. TIRTA SUEZ LAMPUNG</b> dengan penuh minat, gairah dan kemantapan serta didasari rasa tanggung jawab yang setinggi-tingginya akan melaksanakan segala tugas dan kepercayaan yang diberikan pada pemrakarsa kegiatan dengan sebaik-baiknya.
+          </p>
         </div>
 
-        {/* STRUKTUR ORGANISASI */}
+        {/* Struktur Organisasi */}
         <div className="mt-10">
           <h3 className="text-2xl font-bold text-orange-700 mb-4">Struktur Organisasi</h3>
           <div className="grid gap-4 md:grid-cols-3">
@@ -79,7 +89,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Highlight */}
+        {/* Footer Highlight */}
         <div className="mt-8 flex justify-end">
           <span className="inline-flex items-center gap-2 px-4 py-1 bg-orange-600/90 text-white rounded-xl text-sm shadow font-semibold tracking-wide">
             <Sparkles size={18} className="text-white" />
